@@ -5,47 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Sissors</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <section class="game">
         <h1>Rock Paper Scissors</h1>
         <!--Score section-->
-        <div class="score">
-            <div class="player-Score">
-                <h2>Player</h2>
-                <p>0</p>
+        <div class="container">
+            <div class="section">
+        <div class="info">
+            <div class="info">
+                <h3>You:</h3><span id="playerScore">0</span>
             </div>
-            <div class="computer-score">
-                <h2>Computer</h2>
-                <p>0</p>
+            <div class="show">
+                <i class="fas fa-hand-rock"></i>
             </div>
         </div>
-
-        <div class="intro">
-            <h1>Rock Paper Scissors</h1>
-            <button>Let's Play</button>
+        <div class="section">
+            <div class="info">
+                <h3>Computer:</h3><span id="computerScore">0</span>
         </div>
-
+        <i class="fas fa-hand-scissors"></i>
+        </div>
+        </div>
+        </div>
         <div class="move">Choose your move</div>
         <div class="game">
             <!--to show how may moves are left-->
-            <div id="movesleft">Moves left: 10</div>
+            <div id="movesleft">Moves left: 3</div>
             <!--Players buttons-->
-            <h2 class="options">Choose an option</h2>
             <div class="hands">
-                <button class="rock">Rock</button>
-                <button class="paper">Paper</button>
-                <button class="sissors">Scissors</button>
+                <button class="fas fa-hand-rock">Rock</button>
+                <button class="fas fa-hand-paper">Paper</button>
+                <button class="fas fa-hand-scissors">Scissors</button>
             </div>
-            
-            <!--Final Results-->
-            <div class="results"></div>
-
-            <!--Restart game-->
-            <button class="ReStart"></button>
-        </div>
-        </section>
+            </div>
+</section>
 
 
 <script src="assets/js/script.js"></script>
