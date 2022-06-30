@@ -3,16 +3,118 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background:white;
-    color:red;
 }
 
 /* to center game */
-.game{
+.container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 100vh;
     width: 100vw;
     justify-content: center;
     align-items:center;
 }
+h1 {
+    font-family: sans-serif;
+    font-weight: 800;
+    margin: 15px 0;
+    text-align: center;
+}
+.container .section{
+    width: 350px;
+    margin: 20px 50px;
+}
+
+.section.info{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.info span , .info h3{
+    font-size:25px;
+    font-weight: bold;
+    margin: 0px 10px;
+    font-family: sans-serif;
+    color:white;
+}
+
+.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    background: black;
+    
+}
+
+.show i{
+font-size: 100px;
+color: orange;
+}
+
+h2{
+    font-family: sans-serif;
+    font-weight: bold;
+    padding:5px;
+    text-align: center;
+}
+
+.selection{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+}
+
+.selection button{
+    margin: 0 20px;
+    padding: 25px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: grey;
+    color: orange;
+}
+
+/* Styling Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgb(0,0,0,0.4);
+
+}
+
+/*modal-content */
+.modal-content {
+    background-color: #fefefe;
+    margin:15% auto;
+    padding: 20%;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

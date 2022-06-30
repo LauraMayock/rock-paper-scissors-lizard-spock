@@ -1,4 +1,4 @@
-// Selecting elements.
+// Selecting elements from HTML.
 const pScore = document.getElementById('playerScore');
 const cScore = document.getElementById('computerScore');
 const buttons = document.querySelectorAll('.selection button');
@@ -9,6 +9,7 @@ const computerShowIcon = document.querySelector('.computer i');
 let computerScore = 1;
 let playerScore = 1;
 
+//font awsome icons 
 const rockIcon = "fas fa-hand-rock";
 const paperIcon = "fas fa-hand-paper";
 const scissorsIcon = "fas fa-hand-scissors";
@@ -87,3 +88,26 @@ const game = () =>{
 
 // Run the game.
 game();
+
+// modal button 
+let modal = document.getElementById("myModal");
+
+// get the button to opent the modal
+let btn = document.getElementById("myBtn");
+
+let span = document.getElementsByClassName("close")[0];
+//function runs when the user clicks the button 
+myBtn.onclick = function() {
+    modal.style.display = "block";
+}
+//close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+//modal will also close if the user clicks outside the modal area
+window.onclick = function(event) {
+    if(event.target == modal) {
+        modal.style.display = "none";
+    }
+}
