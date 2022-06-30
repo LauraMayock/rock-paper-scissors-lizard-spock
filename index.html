@@ -9,41 +9,36 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <section class="game">
-        <h1>Rock Paper Scissors</h1>
-        <!--Score section-->
-        <div class="container">
-            <div class="section">
-        <div class="info">
+    <h1>Rock Paper Scissors</h1>
+    <h2 id="demo">Try your luck !</h2>
+<!--  The Container  -->
+    <div class="container">
+<!--   The first section     -->
+        <div class="section">
             <div class="info">
-                <h3>You:</h3><span id="playerScore">0</span>
+                <h3>You :</h3><span id="playerScore">0</span>
             </div>
             <div class="show">
                 <i class="fas fa-hand-rock"></i>
             </div>
         </div>
+<!--   The second section     -->
         <div class="section">
             <div class="info">
-                <h3>Computer:</h3><span id="computerScore">0</span>
-        </div>
-        <i class="fas fa-hand-scissors"></i>
-        </div>
-        </div>
-        </div>
-        <div class="move">Choose your move</div>
-        <div class="game">
-            <!--to show how may moves are left-->
-            <div id="movesleft">Moves left: 3</div>
-            <!--Players buttons-->
-            <div class="hands">
-                <button class="fas fa-hand-rock">Rock</button>
-                <button class="fas fa-hand-paper">Paper</button>
-                <button class="fas fa-hand-scissors">Scissors</button>
+                <h3>Computer :</h3><span id="computerScore">0</span>
             </div>
+            <div class="show computer">
+                <i class="fas fa-hand-scissors"></i>
             </div>
-</section>
-
-
+        </div>
+    </div>
+    <h2 style="color: rgb(233, 33, 19);" id="demo2">Choose One !</h2>
+<!-- This selection div contains the buttons   -->
+    <div class="selection">
+        <button class="fas fa-hand-rock" id="rock"></button>
+        <button class="fas fa-hand-paper" id="paper"></button>
+        <button class="fas fa-hand-scissors" id="scissors"></button>
+    </div>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

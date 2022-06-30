@@ -1,130 +1,89 @@
-const game = () => {
-    let playerScore = 0;
-    let computerScore = 0;
-    let moves = 0;
+// Selecting elements.
+const pScore = document.getElementById('playerScore');
+const cScore = document.getElementById('computerScore');
+const buttons = document.querySelectorAll('.selection button');
+const showIcon = document.querySelector('.show i');
+const computerShowIcon = document.querySelector('.computer i');
 
-    const playGame = () => {
-        const rockBtn = document.getElementsByClassName("rock");
-        const paperBtn = document.getElementsByClassName("paper");
-        const scissorBtn = document.querySelector(".scissor");
-        const playerOptions = [rockBtn, paperBtn, scissorBtn];
-        const computerOption =["rock","paper","scissors"]
+// Storing the scores.
+let computerScore = 1;
+let playerScore = 1;
 
-        playerOptions.forEach(option => {
-            option.addEventListener('click',function(){
- 
-                const movesLeft = document.querySelector('.movesleft');
-                moves++;
-                movesLeft.innerText = `Moves Left: ${10-moves}`;
-                 
- 
-                const choiceNumber = Math.floor(Math.random()*3);
-                const computerChoice = computerOptions[choiceNumber];
- 
-                // Function to check who wins
-                winner(this.innerText,computerChoice)
-                 
-                // Calling gameOver function after 10 moves
-                if(moves == 10){
-                    gameOver(playerOptions,movesLeft);
-                }
-            })
-        })
-         
-    }
+const rockIcon = "fas fa-hand-rock";
+const paperIcon = "fas fa-hand-paper";
+const scissorsIcon = "fas fa-hand-scissors";
 
+const randomClasses = [rockIcon, paperIcon, scissorsIcon];
+const text = document.getElementById('demo');
+const text2 = document.getElementById('demo2');
 
-// Function to decide the winner
-// Function to decide winner
-const winner = (player,computer) => {
-    const result = document.querySelector('.result');
-    const playerScoreBoard = document.querySelector('.p-count');
-    const computerScoreBoard = document.querySelector('.c-count');
-    player = player.toLowerCase();
-    computer = computer.toLowerCase();
-    if(player === computer){
-        result.textContent = 'Tie'
-    }
-    else if(player == 'rock'){
-        if(computer == 'paper'){
-            result.textContent = 'Computer Won';
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-
-        }else{
-            result.textContent = 'Player Won'
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
-    }
-    else if(player == 'scissors'){
-        if(computer == 'rock'){
-            result.textContent = 'Computer Won';
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-        }else{
-            result.textContent = 'Player Won';
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
-    }
-    else if(player == 'paper'){
-        if(computer == 'scissors'){
-            result.textContent = 'Computer Won';
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-        }else{
-            result.textContent = 'Player Won';
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
-    }
+const tie = ()=>{
+    text.innerHTML = "It's a Tie ! ";
+    text.style.color = 'orange';
+    text2.innerHTML = text.innerHTML;
+    text2.style.color = 'orange';
 }
 
-
-//Who won all rounds
-// Function to run when game is over
-const gameOver = (playerOptions,movesLeft) => {
- 
-    const chooseMove = document.querySelector('.move');
-    const result = document.querySelector('.result');
-    const reloadBtn = document.querySelector('.reload');
-
-    playerOptions.forEach(option => {
-        option.style.display = 'none';
-    })
-
-  
-    chooseMove.innerText = 'Game Over!!'
-    movesLeft.style.display = 'none';
-
-    if(playerScore > computerScore){
-        result.style.fontSize = '2rem';
-        result.innerText = 'You Won The Game'
-        result.style.color = '#308D46';
-    }
-    else if(playerScore < computerScore){
-        result.style.fontSize = '2rem';
-        result.innerText = 'You Lost The Game';
-        result.style.color = 'red';
-    }
-    else{
-        result.style.fontSize = '2rem';
-        result.innerText = 'Tie';
-        result.style.color = 'grey'
-    }
-    reloadBtn.innerText = 'Restart';
-    reloadBtn.style.display = 'flex'
-    reloadBtn.addEventListener('click',() => {
-        window.location.reload();
-    })
+const win = ()=>{
+    text.innerHTML = "It's a Win ! ";
+    text.style.color = 'rgb(1, 146, 1)';
+    text2.innerHTML = text.innerHTML;
+    text2.style.color = 'rgb(1, 146, 1)';
 }
 
-
-// Calling playGame function inside game
-playGame();
- 
+const lose = ()=>{
+    text.innerHTML = "You Loosed ! ";
+    text.style.color = 'red';
+    text2.innerHTML = text.innerHTML;
+    text2.style.color = 'red';
 }
 
-// Calling the game function
+// Game Functionality.
+const game = () =>{
+    buttons.forEach(btn =>{
+        btn.addEventListener('click',(e)=>{
+        // Random rock paper scissor for the computer and clicked ones for the player
+           let clickedBtn = e.target.className;
+           showIcon.className = clickedBtn;
+           let randomNum = Math.floor(Math.random() * randomClasses.length);
+           computerShowIcon.className = randomClasses[randomNum];
+
+           // If it's a Tie .
+           if(showIcon.className === computerShowIcon.className){
+               pScore.innerHTML = pScore.innerHTML;
+               cScore.innerHTML = cScore.innerHTML;
+               tie();
+           }
+
+           // if it's not a Tie.
+           else if(showIcon.className === rockIcon && computerShowIcon.className === scissorsIcon){
+               pScore.innerHTML = playerScore;
+               playerScore++;
+               win();
+           }else if(showIcon.className === rockIcon && computerShowIcon.className === paperIcon){
+               cScore.innerHTML = computerScore;
+               computerScore++;
+               lose();
+           }else if(showIcon.className === paperIcon && computerShowIcon.className === scissorsIcon){
+               cScore.innerHTML = computerScore;
+               computerScore++;
+               lose();
+           }else if(showIcon.className === paperIcon && computerShowIcon.className === rockIcon){
+               pScore.innerHTML = playerScore;
+               playerScore++;
+               win();
+           }else if(showIcon.className === scissorsIcon && computerShowIcon.className === rockIcon){
+               cScore.innerHTML = computerScore;
+               computerScore++;
+               lose();
+           }else if(showIcon.className === scissorsIcon && computerShowIcon.className === paperIcon){
+               pScore.innerHTML = playerScore;
+               playerScore++;
+               win();
+           }
+        });
+    });
+}
+
+// Run the game.
 game();
