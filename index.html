@@ -9,8 +9,10 @@
 </head>
 <body>
     <section class="game">
+        <h1>Rock Paper Scissors</h1>
+        <!--Score section-->
         <div class="score">
-            <div class="player-score">
+            <div class="player-Score">
                 <h2>Player</h2>
                 <p>0</p>
             </div>
@@ -25,17 +27,23 @@
             <button>Let's Play</button>
         </div>
 
+        <div class="move">Choose your move</div>
         <div class="game">
-            <h2 class="winner">Choose an option</h2>
+            <!--to show how may moves are left-->
+            <div id="movesleft">Moves left: 10</div>
+            <!--Players buttons-->
+            <h2 class="options">Choose an option</h2>
             <div class="hands">
-                <img class="player-hands" src="" alt="">
-                <img class="computer-hand" src="" alt="">
-            </div>
-            <div class="options">
                 <button class="rock">Rock</button>
                 <button class="paper">Paper</button>
-                <button class="sissors">Sissors</button>
+                <button class="sissors">Scissors</button>
             </div>
+            
+            <!--Final Results-->
+            <div class="results"></div>
+
+            <!--Restart game-->
+            <button class="ReStart"></button>
         </div>
         </section>
 
