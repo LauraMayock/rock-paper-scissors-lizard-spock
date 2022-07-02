@@ -4,50 +4,58 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body {
+    width:100vw;
+    height: 100vw;
+    background-image: url(/assets/css/img/ClipartKey_2855975.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: lightblue;
+}
 /* to center game */
 .container{
     display: flex;
     flex-direction: row;
-    height: 100vh;
-    width: 100vw;
     justify-content: center;
     align-items:center;
+    width: 100vw;
+    
+  
+}
+#game{
+    background-color: lightblue;
+    width: 100vw;
+    height: 500px;
 }
 h1 {
     font-family: sans-serif;
     font-weight: 800;
-    margin: 15px 0;
     text-align: center;
+    margin-top: 250px;
+    padding-top: 10px;
 }
 .container .section{
-    width: 350px;
-    margin: 20px 50px;
+    width: 25%;
+    margin: 8px 50px;
 }
 
-.section.info{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-}
 
 .info span , .info h3{
-    font-size:25px;
+    font-size:1.25rem;
     font-weight: bold;
-    margin: 0px 10px;
     font-family: sans-serif;
-    color:white;
+    color:black;
 }
 
 .show{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 220px;
-    background: black;
+    height: 150px;
+    background: grey;
     
 }
+
 
 .show i{
 font-size: 100px;
@@ -57,7 +65,6 @@ color: orange;
 h2{
     font-family: sans-serif;
     font-weight: bold;
-    padding:5px;
     text-align: center;
 }
 
@@ -65,20 +72,27 @@ h2{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
     height: 100px;
 }
 
 .selection button{
     margin: 0 20px;
     padding: 25px;
-    border-radius: 50%;
     border: none;
     outline: none;
     cursor: pointer;
     background-color: grey;
     color: orange;
+    font-size: 1.25rem;
 }
+
+.selection button:hover{
+        border:5px solid grey;
+        font-size: 30px;
+    }
+
+
+
 
 /* Styling Modal */
 .modal {
@@ -98,10 +112,33 @@ h2{
 /*modal-content */
 .modal-content {
     background-color: #fefefe;
-    margin:15% auto;
-    padding: 20%;
-    border: 1px solid #888;
-    width: 80%;
+    margin: 15% auto;
+    padding: 5%;
+    width: 50%;
+    text-align: center;
+}
+
+.modal h3{
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.modal p{
+    padding: 10px;
+}
+/*Modal button */
+#myBtn{
+    margin-left: 10px;
+    background-color: grey;
+    font-size: 2rem;
+    padding: 5px;
+    color: orange;
+    font-weight: 700;
+    border: 1px;
+}
+#myBtn:hover{
+    border:5px solid grey;
+    font-size: 1.25rem;
 }
 .close {
     color: #aaa;
@@ -118,3 +155,103 @@ h2{
     cursor: pointer;
 }
 
+.computerScore {
+    color: black
+}
+
+
+
+/*media queries */
+/* On screens that are 1520px or more */
+@media screen and (min-width: 1520px) {
+   body{
+    background-image: none;
+   }
+    h1{
+        margin: 0;
+    }
+   }
+
+    
+  /* On screens that are 800px or less*/
+@media screen and (max-width: 800px) {
+    h1 {
+        margin-top: 150px;
+     }
+
+     .selection button {
+        margin: 0 10px;
+        padding: 10px;
+        font-size: 17px;
+}
+     .info h3{
+    font-size:.8rem;
+    
+}
+.modal-content{
+    width: 90%;
+    height: 450px;
+     }
+
+}
+
+ /* On screens that are 530px or less */
+ @media screen and (max-width: 530px) {
+    .selection button {
+        margin: 5px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    #computerScore {
+        font-size: .8rem;
+    }
+    #playerScore {
+        font-size: .8rem;
+    }
+
+    .selection {
+        display:flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        height: 200px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: stretch;
+
+ }
+.show {
+    width: 150px;
+}
+.modal-content{
+width: 90%;
+height: 450px;
+ }
+
+#myBtn{
+font-size: 1.25rem;
+}
+ }
+ /* On screens that are 430px or less */
+ @media screen and (max-width: 430px) {
+ .container .section {
+    width: 25%;
+    margin: 8px 50px;
+}
+.container {
+    margin-right: 100px;
+}
+
+.info h3{
+    width: 150px;
+ }
+ .selection button{
+font-size: 1.5rem;
+ }
+
+.modal-content{
+    width: 90%;
+    height: 450px;
+}
+
+ }

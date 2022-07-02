@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Sissors</title>
-    <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+    <meta name="description" content="rock, paper, scissors, lizard,spock javascript">
+    <title>Rock Paper Sissors Lizard Spock</title>
+    <script src="https://kit.fontawesome.com/9fec73d71e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <h2 id="demo">Try your luck !</h2>
-    <!--Modal with game instructions-->
-    <button id="myBtn">How to play</button>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">close</span>
-            <h3>How to play</h3>
-            <P>Play against the computer in the classic game of Rock Paper Scissors. Choose between Rock Paper Scissors by clicking on one of the buttons provided. the computer will randomly choose between the three choices at the same time.  </P>
-        <h3>The outcome of the game is determined by 3 simple rules</h3>
-        <p>Rock wins against scissors</p>
-        <P>Scissors wins against paper</P>
-        <P>Paper wins against rock</P>
-        </div>
-    </div>
+    <button id="myBtn"><i class="fa-solid fa-circle-question"></i></button>
+      <div id="myModal" class="modal">
+          <div class="modal-content">
+              <h3>How to play</h3>
+              <P>Rock, Paper, Scissors, Lizard, Spock is a game of chance that expands. It is first used to settle a dispute about what to watch on TV between Sheldon and Raj in "The Lizard-Spock Expansion". The rules are simple : )  </P>
+              <p>Scissors cuts Paper<br>
+              Paper covers Rock<br>
+              Rock crushes Lizard<br>
+              Lizard poisons Spock<br>
+              Spock smashes Scissors<br>
+              Scissors decapitates Lizard<br>
+              lizard eats paper<br>
+              Paper disproves Spock<br>
+              Spock vaporizes Rock<br>
+              rock crushes Scissors</P>
+              <span class="close">close</span>
+          </div>
+      </div>
+    <section id ="game">
+      <!--Modal with game instructions-->
+      <h1>Rock Paper Sissors Lizard Spock</h1>
+      
+    <h2 id="text">Try your luck !</h2>
+  
 
 <!--  The Container  -->
     <div class="container">
 <!--   The first section     -->
         <div class="section">
             <div class="info">
-                <h3>You :</h3><span id="playerScore">0</span>
+                <h3>You :<span id="playerScore">0</span></h3>
             </div>
             <div class="show">
                 <i class="fas fa-hand-rock"></i>
@@ -39,20 +49,23 @@
 <!--   The second section     -->
         <div class="section">
             <div class="info">
-                <h3>Computer :</h3><span id="computerScore">0</span>
+                <h3>Computer :<span id="computerScore">0</span></h3>
             </div>
             <div class="show computer">
                 <i class="fas fa-hand-scissors"></i>
             </div>
         </div>
     </div>
-    <h2 style="color: rgb(233, 33, 19);" id="demo2">Choose One !</h2>
+    <h2 id="text2">Choose One !</h2>
 <!-- This selection div contains the buttons   -->
     <div class="selection">
-        <button class="fas fa-hand-rock" id="rock"></button>
-        <button class="fas fa-hand-paper" id="paper"></button>
-        <button class="fas fa-hand-scissors" id="scissors"></button>
+        <button class="fas fa-hand-rock" id="rock"><br>Rock</button>
+        <button class="fas fa-hand-paper" id="paper"><br>paper</button>
+        <button class="fas fa-hand-scissors" id="scissors"><br>scissors</button>
+        <button class="fa-solid fa-hand-spock" id="spock"><br>spock</button>
+        <button class="fa-solid fa-hand-lizard" id="lizard"><br>spock</button>
     </div>
+</section>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
