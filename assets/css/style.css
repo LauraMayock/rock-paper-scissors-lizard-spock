@@ -10,7 +10,7 @@ body {
     background-image: url(/assets/css/img/ClipartKey_2855975.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: lightblue;
+    background-color: white;
 }
 /* to center game */
 .container{
@@ -23,7 +23,7 @@ body {
   
 }
 #game{
-    background-color: lightblue;
+    background-color: white;
     width: 100vw;
     height: 500px;
 }
@@ -52,14 +52,15 @@ h1 {
     align-items: center;
     justify-content: center;
     height: 150px;
-    background: grey;
+    background: #018749;
+    border: 2px solid black;
     
 }
 
 
 .show i{
 font-size: 100px;
-color: orange;
+color: black;
 }
 
 h2{
@@ -73,21 +74,22 @@ h2{
     align-items: center;
     justify-content: center;
     height: 100px;
+    width: 100%;
 }
 
 .selection button{
     margin: 0 20px;
     padding: 25px;
-    border: none;
+    border: 2px solid black;
     outline: none;
     cursor: pointer;
-    background-color: grey;
-    color: orange;
-    font-size: 1.25rem;
+    background-color: #018749;
+    color: black;
+    
 }
 
 .selection button:hover{
-        border:5px solid grey;
+        border:5px solid #018749;
         font-size: 30px;
     }
 
@@ -129,19 +131,19 @@ h2{
 /*Modal button */
 #myBtn{
     margin-left: 10px;
-    background-color: grey;
+    background-color: white;
     font-size: 2rem;
     padding: 5px;
-    color: orange;
+    color: black;
     font-weight: 700;
     border: 1px;
 }
 #myBtn:hover{
-    border:5px solid grey;
+    border:5px solid #018749;
     font-size: 1.25rem;
 }
 .close {
-    color: #aaa;
+    color: #018749;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -164,15 +166,21 @@ h2{
 /*media queries */
 /* On screens that are 1520px or more */
 @media screen and (min-width: 1520px) {
-   body{
-    background-image: none;
-   }
+   
     h1{
-        margin: 0;
+        margin-top: 250px;
     }
    }
+/* On screens that are 801px or more*/
+@media screen and (min-width: 801px) {
+ .show{
+    height: 130px;
+ }
+.selection button{
+ font-size: 25px;
+}
 
-    
+}
   /* On screens that are 800px or less*/
 @media screen and (max-width: 800px) {
     h1 {
@@ -180,9 +188,9 @@ h2{
      }
 
      .selection button {
-        margin: 0 10px;
+        margin: 10px;
         padding: 10px;
-        font-size: 17px;
+        font-size: 20px;
 }
      .info h3{
     font-size:.8rem;
@@ -195,14 +203,22 @@ h2{
 
 }
 
+ /* On screens that are 644px or less*/
+ @media screen and (max-width: 644px) {
+.selection{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 200px;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+ }
  /* On screens that are 530px or less */
  @media screen and (max-width: 530px) {
-    .selection button {
-        margin: 5px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 15px;
-    }
+    
     #computerScore {
         font-size: .8rem;
     }
@@ -210,11 +226,12 @@ h2{
         font-size: .8rem;
     }
 
-    .selection {
-        display:flex;
+    .selection{
+        display: flex;
         align-items: stretch;
         justify-content: flex-start;
         height: 200px;
+        width: 100%;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: stretch;
@@ -233,10 +250,20 @@ font-size: 1.25rem;
 }
  }
  /* On screens that are 430px or less */
- @media screen and (max-width: 430px) {
+ @media screen and (min-width: 430px) {
  .container .section {
     width: 25%;
     margin: 8px 50px;
+}
+.selection{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 200px;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
 }
 .container {
     margin-right: 100px;
