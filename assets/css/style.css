@@ -4,14 +4,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* taken from codepen */
 body {
-    width:100vw;
-    height: 100vw;
-    background-image: url(/assets/css/img/ClipartKey_2855975.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: white;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 /* to center game */
 .container{
     display: flex;
@@ -23,7 +36,6 @@ body {
   
 }
 #game{
-    background-color: white;
     width: 100vw;
     height: 500px;
 }
@@ -31,7 +43,6 @@ h1 {
     font-family: sans-serif;
     font-weight: 800;
     text-align: center;
-    margin-top: 250px;
     padding-top: 10px;
 }
 .container .section{
@@ -44,7 +55,7 @@ h1 {
     font-size:1.25rem;
     font-weight: bold;
     font-family: sans-serif;
-    color:black;
+    color:white;
 }
 
 .show{
@@ -52,15 +63,14 @@ h1 {
     align-items: center;
     justify-content: center;
     height: 150px;
-    background: #018749;
-    border: 2px solid black;
+    border: 2px solid white;
     
 }
 
 
 .show i{
 font-size: 100px;
-color: black;
+
 }
 
 h2{
@@ -80,17 +90,13 @@ h2{
 .selection button{
     margin: 0 20px;
     padding: 25px;
-    border: 2px solid black;
-    outline: none;
+    border: 1px solid white;
     cursor: pointer;
-    background-color: #018749;
-    color: black;
-    
+    font-size: 1.25rem;
 }
 
 .selection button:hover{
-        border:5px solid #018749;
-        font-size: 30px;
+        border: 7px solid white;
     }
 
 
@@ -114,7 +120,7 @@ h2{
 /*modal-content */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 10px auto;
     padding: 5%;
     width: 50%;
     text-align: center;
@@ -130,16 +136,15 @@ h2{
 }
 /*Modal button */
 #myBtn{
-    margin-left: 10px;
-    background-color: white;
-    font-size: 2rem;
+    margin: 10px;
+    font-size: 1.25rem;
     padding: 5px;
     color: black;
     font-weight: 700;
     border: 1px;
 }
 #myBtn:hover{
-    border:5px solid #018749;
+    border:5px solid white;
     font-size: 1.25rem;
 }
 .close {
@@ -152,91 +157,70 @@ h2{
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
 
 .computerScore {
-    color: black
+    color: white
 }
 
 
 
 /*media queries */
-/* On screens that are 1520px or more */
-@media screen and (min-width: 1520px) {
+/*On screens that are 1030px or more */
+@media screen and (max-width: 1030px) {
    
-    h1{
-        margin-top: 250px;
+    .selection{
+        display: grid;
+        grid-template-columns: 190px 190px 190px;
+        grid-template-rows: 125px 83px;
     }
    }
-/* On screens that are 801px or more*/
-@media screen and (min-width: 801px) {
- .show{
-    height: 130px;
- }
+
+
+
+ /* On screens that are 670px or less*/
+ @media screen and (max-width: 670px) {
 .selection button{
- font-size: 25px;
-}
+      padding: 5px;
 
-}
-  /* On screens that are 800px or less*/
-@media screen and (max-width: 800px) {
-    h1 {
-        margin-top: 150px;
-     }
+         }
 
-     .selection button {
-        margin: 10px;
-        padding: 10px;
-        font-size: 20px;
-}
-     .info h3{
-    font-size:.8rem;
-    
-}
-.modal-content{
-    width: 90%;
-    height: 450px;
-     }
-
-}
-
- /* On screens that are 644px or less*/
- @media screen and (max-width: 644px) {
 .selection{
-    display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
-    height: 200px;
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: stretch;
+    display: grid;
+    grid-template-columns: 190px 190px;
+    grid-template-rows: 90px 65px 65px;
+}
+
+h1 {
+    width: 90%;
 }
  }
  /* On screens that are 530px or less */
- @media screen and (max-width: 530px) {
+ @media screen and (max-width: 490px) {
     
     #computerScore {
-        font-size: .8rem;
+        font-size: 1rem;
     }
     #playerScore {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
-    .selection{
-        display: flex;
-        align-items: stretch;
-        justify-content: flex-start;
-        height: 200px;
-        width: 100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: stretch;
+.container{
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
- }
+}
+.container h3 {
+    font-size: 18px;
+}
+
 .show {
     width: 150px;
 }
@@ -248,37 +232,39 @@ height: 450px;
 #myBtn{
 font-size: 1.25rem;
 }
- }
- /* On screens that are 430px or less */
- @media screen and (min-width: 430px) {
- .container .section {
-    width: 25%;
-    margin: 8px 50px;
-}
-.selection{
-    display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
-    height: 200px;
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: stretch;
-}
-.container {
-    margin-right: 100px;
+
+.show.computer i {
+    font-size: 4rem;
 }
 
-.info h3{
-    width: 150px;
- }
- .selection button{
-font-size: 1.5rem;
- }
+.show i{
+    font-size: 4rem;
+}
+
+
+.selection {
+    display:grid;
+    grid-template-columns: 190px 190px;
+    grid-template-rows: 80px 55px 65px;
+}
+
+}
+
+
+ /* On screens that are 360px or less */
+ @media screen and (min-width: 320px) and (max-width: 489px) {
 
 .modal-content{
     width: 90%;
     height: 450px;
+}
+
+.show {
+    width: 80px;
+    height: 80px;
+}
+.selection button {
+ width:130px;
 }
 
  }
