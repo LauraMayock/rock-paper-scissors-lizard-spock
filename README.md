@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/y4sjL8t/game-image.png" alt="game-image. Big bang theory charactors">
+<img src="https://i.ibb.co/3MN6HbS/large-screen.png" alt="Screan show of game"></a>
 
 # **_Rock Paper Scissors Lizard Spock - Portfolio Project 2 - HTML, CSS & Javascript_**
 Created by the producers of the hit TV series The Big bang theory as a way for the 2 beloved charactors, Sheldon Cooper and Rajesh Koothrappali to settle a dispute about what to watch on TV. Rock Paper Scissors Lizard Spock is a fun twist on the old game of two people using only your hands and some simple rules. 
@@ -40,7 +40,7 @@ You can view the live site here - <a href="https://lauramayock.github.io/Rock-pa
 
 # Objective
 
-The goal is to create an interactive front-end site that provides entertainment for people of all ages. Users will be able to play and fun and entertaining game of Rock Paper Scissor Lizard Spock against the computer and, after each round, see a clear message on who the winner was and what the deciding factor was. 
+The goal is to create an interactive front-end site that provides entertainment for people of all ages. Users will be able to play a fun and entertaining game of Rock Paper Scissor Lizard Spock against the computer and, after each round, see a clear message on who the winner was and what the deciding factor was. 
 
 [Back to top](#content)
 
@@ -90,14 +90,18 @@ The simple design makes it user-friendly for all ages and very accessible. To en
 
 ### Imagery
 
-I used the connection with the popular TV series to make the site appealing to their broad fan base. The image was sourced from [Clip art Key](https://www.clipartkey.com/). Because of the imagery chosen, the game is best enjoyed using a portrait view. 
+My original choice was to use the connection with the popular TV series to make the site appealing to their broad fan base. The image was sourced from [Clip art Key](https://www.clipartkey.com/). But in the end, id decided to use a simple but eye-catching CSS colour-changing background to reach a broader user base.
  
  <img src="https://i.ibb.co/pvc2bP2/Clipart-Key-2855975-1.png" alt="Hero image of big bang Theory charactors"></a>
  
+<img src="https://i.ibb.co/1vdTcwJ/Colour-choice.png" alt="Origional game">Origional image</a>
+
 
 ### Colour scheme
 
-My final choice of colours was chosen to ompliment the hero image. A selection of Teal Green, and white. As the green was an intense colour, I knew they were a great choice of colour for contrasting, ensuring the eligibility of text and sticking with the theme of simplicity.
+My final choice of colours was chosen to compliment the background colours. The simple choice of black and white against the ever changing background colour not only provide accessibiliy but is a blend.
+
+<img src="https://i.ibb.co/vs62ycr/screen-shot-of-game.png" alt="screen-shot-of-game"></a>
 
 ### Typography
 
