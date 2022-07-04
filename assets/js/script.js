@@ -167,7 +167,7 @@ game();
 // modal button 
 let modal = document.getElementById("myModal");
 
-// get the button to opent the modal
+// get the button to open the modal
 let btn = document.getElementById("myBtn");
 
 let span = document.getElementsByClassName("close")[0];

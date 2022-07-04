@@ -4,7 +4,7 @@
 Created by the producers of the hit TV series The Big bang theory as a way for the 2 beloved charactors, Sheldon Cooper and Rajesh Koothrappali to settle a dispute about what to watch on TV. Rock Paper Scissors Lizard Spock is a fun twist on the old game of two people using only your hands and some simple rules. 
 
 You can view the live site here - <a href="https://lauramayock.github.io/Rock-paper-sissors/" target="_blank"> Rock Paper Scissors Lizard Spock 
-
+----
 # Content
 
 * [Objectives](<#objective>)
@@ -20,23 +20,28 @@ You can view the live site here - <a href="https://lauramayock.github.io/Rock-pa
     * [Colour Scheme](<#colour-scheme>)
     * [Typography](<#typography>)
 * [Features](<#features>)
-    * [Navigation Menu](<#navigation-menu>)
-    * [Home Page](<#home-page>)
-    * [Events page](<#events-page>)
-    * [Pre-booking](<#pre-booking-page>)
-    * [Contact us page](<#contact-us-page>)
-    * [Footer](<#footer>)
+    * [Favicon](<#favicon>)
+    * [Title Bar](<#title-bar>)
+    * [Modal](<#modal>)
+    * [declaration of win](<#declaration-of-winning-party>)
+    * [scoreboard](<#scoreboard>)
+    * [player V computer](<#palyer-v-computer>)
+    * [Round Decider](<#round-decider>)
+    * [players-choice](<#players-choice>)
+    * [Results](<#results>)
+    * [choices](<#choices>)
 * [Future Features](<#future-features>)
 * [Technologies Used](<#technologies-used>)
 * [Testing](<#testing>)
     * [Code Validation](<#code-validation>)
-    * [Lighthouse Testing](<#lighthouse-testing>)
     * [Accessibility Testing](<#accessibility-testing>)
     * [Manual Testing](<#manual-testing>)
     * [Bugs Fixed](<#bugs-fixed>)
 * [Deployment](<#deployment>)
 * [Credits](<#credits>)
 * [Acknowledgements](<#acknowledgements>)
+
+
 
 # Objective
 
@@ -84,6 +89,10 @@ Wireframes were created using Balsamiq:
 
 Consisting of one page, the site has a simple layout. A modal at the top left corner provides a quick outline of the rules. This makes it very convenient to play on the go. 
 
+<img src="https://i.ibb.co/gjRhYRj/phone.png" alt="phone">Phone</a>
+<img src="https://i.ibb.co/yYbbYkd/desktop.png" alt="desktop">DeskTop</a>
+<img src="https://i.ibb.co/6s9TBYx/tablet.png" alt="tablet">Tablet</a>
+
 ## Design Choices
 
 The simple design makes it user-friendly for all ages and very accessible. To ensure this, I tried to meet as much of the criteria laid out by devtool lighthouse testing. 
@@ -105,147 +114,99 @@ My final choice of colours was chosen to compliment the background colours. The 
 
 ### Typography
 
-I chose two fonts from the google font gallery. Comfortaa for the main text and Patua One for the information in the footer and the font on the contactus form. I did try a few options to highlight the quote below the hero video but decided against it as it was too jarring. I chose Arial as the font family to fall back on for Comfortaa as it would still fit in with the feel of the page. And the font Georgia as a fallback for Patua One.
+I chose two fonts from the google font gallery. Heebo, using the extra bold option for all main text and Moanrope for the Modal text in a lighter weight. I chose Sans- serif as the font family to fall back on if both Heebo and Monrope would still fit in with the feel of the page. I also decided to use [Font Awsome icons](https://fontawesome.com/icons) to make it visually appealing and highlight the traditional hand signs used while playing the game. 
+
+<img src="https://i.ibb.co/crvy7kj/font-icon-buttons.png" alt="font-icon-buttons"></a>
+
 
 [Back to top](<#content>)
 
 # Features
 
-## Navigation
+## Favicon
+* A favicon has been added as a fun touch and to make the site tap memorable for repeat users.
 
-* The navigation menu is positioned at the top of each page and gives the user easy access to the main areas of the website.
-* The logo, which is also prominent on each page, gives an easy link back to the main page.
-* The navigational link to the Pre-booking form is purposely placed within the advertisements, which are solely related to the event organised by the mother and baby group.
-* This is to ensure minimum confusion for the user of the site.
-* To ensure eligibility and easy use, the navigation bar converts from a row of navigation buttons at the top of the page to a row nestled beneath the logo on smaller screens.
+<img src="https://i.ibb.co/hYqGdtP/favicon.png" alt="favicon"></a>
 
-<a href="https://ibb.co/fdD9ZQw"><img src="https://i.ibb.co/7tkQBbm/RRSLJR4.png" alt="Nav-bar on a big screen"></a>
+## Title Bar
 
-Navigation menu on a large screen.
+* In a prominent position, centred at the top of the site, is the game's name. Making it easily recognisable to visitors.
 
-<a href="https://ibb.co/nLMwxpS"><img src="https://i.ibb.co/vj4c098/RPJGD7U.png" alt="Nav-bar on small screen"></a>
-
-Navigation menu on a small screen.
-
-* Each navigation link has a hover element as a visual add for the user. 
-
-## Home Page
-
-* As it is the landing page, it needed to appeal to the eye and striking. I wanted it to be memorable and unique but in keeping with the tone of the page. As the users lifesytles are busy, it is vital that the user immediately know they are on the correct website at a glance.
-* For the larger screens, the hero video is falling a bit below the screen; this intuitively nudges the user to scroll down. On the smaller screens, you can see the opening heading which, as well as the hero video, is purposely chosen to connect with the user. 
+<img src="https://i.ibb.co/QC6XVbY/Heading.png" alt="Heading"></a>
 
 
-<a href="https://ibb.co/Q8cs23j"><img src="https://i.ibb.co/KNGCMpz/RRGCJEM.png" alt="Landing page on a large screen"></a>
+## Modal
 
-Landing page large screen
+* Situated in the top left corner of the site is the help section.
+* To ensure high accessibility, I added the word help with the recognisable font icon to lead users there if further assistance or explanation is required of the game.
+* The modal provides a quick outline of the game's history and its rules.
+* For the users easy, not only is there a close button on the modal but if the user clicks outside the modal pop up area the modal will close.
 
-<a href="https://ibb.co/b1bFQnq"><img src="https://i.ibb.co/sjWCbrk/RCFMDZA.png" alt="Landing page on a medium screen"></a>
+<img src="https://i.ibb.co/wSDkV87/modal-button.png" alt="modal-button"></a>
 
-Landing page medium screen
-
-<a href="https://ibb.co/tHYz79j"><img src="https://i.ibb.co/7SrQwqM/RGGCK6S.png" alt="landing page on a small screen"></a>
-
-Landing page small screen
-
+<img src="https://i.ibb.co/58DDqNC/Modal-info.png" alt="Modal-info"></a>
 
 
-* The main text area gives a quick overview of what to expect at each meeting. It provides critical information to alleviate user concerns by pointing out who the group facilitates and the amenities available to them and their child. 
+## Declaration of winning party
 
-* The Weekly meet up section gives a day, time and google link to the location of each of the meetups. Again the simple prominent design was purposely done for a user on the go. 
+* After each round is played, text will appear below the game name to announce the winner. 
+* Each possible outcome had a designated colour to make it quick for the user to recognise the outcome.
 
-* The Testimonials section is also a key element in encouraging anxious new parents that the Westport mother and baby group is perfect for them. It helps lay the foundation of trust and kinship with the user by providing testimonials from users to relate to.
+<img src="https://i.ibb.co/6y1c3z4/tie-round.png" alt="tie-round"></a>
+<img src="https://i.ibb.co/mTkzN2Z/winning-round.png" alt="winning-round"></a>
+<img src="https://i.ibb.co/wMPLDkQ/lost-round.png" alt="lost-round"></a>
 
-* Each element on this page has the first time user, the new parent eager to connect with their local community, and the returning user looking to find the information required quickly.
+## Scoreboard
 
+* On the left is the player's score, which increases after each player win.
+* The right shows the computer's score, which also updates after each win.
 
+<img src="https://i.ibb.co/JrRTnXB/scoreboard.png" alt="scoreboard"></a>
 
-## Events Page
+## Player v Computer 
 
-* The events pages provide up to date information on events organised by the Mother and baby ground and the community. This gives parents and carers a one-stop destination to find events, courses and family fun in their area. Ensuring return users to the website and a continued connection with families that have moved on from baby/toddler-aged children. 
+* The left box shows the player's chosen hand, and on the right, the computers. 
+* This gives for easy comparison.
 
-* There are visuals for the user via photos of the events and a video with controls to give the user full control of its workings.
+<img src="https://i.ibb.co/VTtfb4Q/display.png" alt="display"></a>
 
-* The events section also links a pre-booking from within the website (pre-booking-form.html). The user can pre-book their chosen event, and the organisers can gauge popularity in the event and plan accordingly.
+## Round decider
 
-* I have purposely chosen to leave the link to the prebooking form blue and underlined; this is for easy recognition.
+* After each round, the deciding factor based on the game's rules is also shown.
+* Its also great for new users as they can learn the rules of the game as they play.
 
-<a href="https://ibb.co/3YCb272"><img src="https://i.ibb.co/rfwhYmY/RGJTXMP.png" alt="Events page on a big screen"></a>
-
-Events Page
-
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/R9K0MRn/R7AWQWH.png" alt="Events page on a small screen"></a>
-
-Events Page Small Screen
-
-<a href="https://ibb.co/5Gty0Hz"><img src="https://i.ibb.co/RYZmFwM/R8BOB3G.png" alt="image of weaning video"></a>
-
-Weaning video
-
-## Pre-Booking Page
-
-* The pre-booking page gives the user added value as they can book their place in upcoming events. This also ensures return users to the website. 
-
-* The form is quick to fill in and ensures that the required information is filled out in the correct fields. 
-
-<a href="https://ibb.co/CHNZvVt"><img src="https://i.ibb.co/QKzRnYc/RV6UACA.png" alt="Pre-booking form large screen"></a>
-
-Pre-booking Page large screen
-
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/bK4q2sw/R62SS9H.png" alt="image of Pre-booking form on a small screen" ></a>
-
-Pre-booking Page small screen
+<img src="https://i.ibb.co/86X0hnL/rule.png" alt="rule"></a>
+<img src="https://i.ibb.co/N6RqNXb/examples-of-rules.png" alt="examples-of-rules"></a>
+<img src="https://i.ibb.co/2yqz2Lc/rule2.png" alt="rule2"></a>
 
 
-## Contact Us Page
+## Players choices
 
-* This page is easily accessible from both the Navigation bar and the link in the footer.
+* Layed out at the bottom of the game are the moves the player can choose to play. Rock, Paper,     Scissors, Lizard, Spock.
+* When the player chooses a play, this triggers an automated random play from the computer.
+* Using the written word and a Font Awesome icon to represent it helps the user learn the hand movements usually associated with the game. It also ensures accessibility is being met to the highest of standards.
+* Each button also has a hoover element for users benefit.
 
-* This page holds a simple form to send queries to the organisers and a google map embedded with the office address and contact information in the footer.
-
-* The form ensures that all required boxes are filled correctly before submitting.
-
-
-<a href="https://ibb.co/ZTtz3xP"><img src="https://i.ibb.co/Hg1T0qs/RSB687B.png#" alt="Contact-us page on a large screen"></a>
-
-Contact us Large screen
-
-<a href="https://ibb.co/ThfSNqK"><img src="https://i.ibb.co/w6kX2rJ/RAQLCH1.png" alt="Contact us on a small screen"></a>
-
-Contact us small screen
-
-## Footer
-
-* The Footer as well as the Navigation bar is uniform throughout the website giving consistancy and ease for the user.
-
-* It also has a link for users' ease that connects them us the Contact us pages(contact-us.html), which provides an opportunity to send a message to the organisers via messaging form.
-
-* It also has links to the Mother and baby groups social media.
-
-* Each social media link opens to a new tab.
-
-<a href="https://ibb.co/bmmJSMj"><img src="https://i.ibb.co/T22LVxD/RR05XNU.png" alt="Image of the footer"></a>)
+<img src="https://i.ibb.co/nL0w56F/font-icon-buttons.png" alt="font-icon-buttons"></a>
 
 [Back to top](<#content>)
 
 
 # Future Features
 
-* It would be very beneficial to upgrade the pre-booking page to a booking page. This would be beneficial for bothering the user and the customer.
+* I think that having the choice to either play as is or by rounds of 5 or 10 would provide the user with an opportunity to share their high score or wins on social media and guarantee return and new visitors.
 
-* A resources section with access to local resources such as a list of local doctors, healthcare professions, and local amenities. This would be a great added benefit for first-time users and ensure returning users.
+* As I have gone to such lengths to ensure the site's accessibility, I think the implintation of sound cues and effects would be a great add-on.
 
-* A blog section would help keep users up to date with local news and keep users engaged.
-
-* An online form would be such a benefit for users to connect with others in the area.
-
+* Currently, the site is responsive and recommended to play in portrait. Given more time, I would have liked to work on a smartphone landscape view for users' preferences.
 
 
 # Technologies used
 
 * HTML5 - Provides the sturcture and content for the website.
 * CSS3 - Provides the styling for the website.
-* [I love img](https://www.iloveimg.com/) to comress and crop images.
-* [Onlin video converter](https://video-converter.com/) to convert video to a MP4.
+* JavaScript - To build and interative game, for the user to actively enage with data.
+* Google Chrome DevTools - Used to debug and test responsiveness of the site.
 * gitpod - Used to develop website.
 * GitBash - Used to push repository to Github.
 * Github - Used host and deploy website.
@@ -256,301 +217,95 @@ Contact us small screen
 
 ## Code Validation
 
-The Westport Mother and baby website has been validated using W3C HTML Validator and W3C CSS Validator. There were minor error taht were corrected immediately. Larger errors are documented below in [#bugs-fixed](<#bugs-fixed>)
+* Both the CSS and HTML code was tested using W3 validation services. Each test came back with no issues highlighted.
 
-## Lighthouse Testing
+<img src="https://i.ibb.co/nkPm19j/v3-CSS-valatation-test.png" alt="v3-CSS-valatation-test"></a>
+<img src="https://i.ibb.co/P6FBqNn/w3-HTML-validation-tool.png" alt="w3-HTML-validation-tool"></a>
 
-The website was also put through Lighthouse testing via Chrome Devtools which tests a site under 4 different headings; Performance, Accessibility, Best Practices and SEO and it tests it under mobile and desktop criteria.
+* JavaScript was tested using [Beautifytools](https://beautifytools.com/javascript-validator.php)
 
-![Lighthouse testing Desktop](assets/images/lighthouse-preformance-test-desktop.png)
-![Lighthouse testing Mobile](assets/images/lighthouse-preformance-test-mobile.png)
+<img src="https://i.ibb.co/B2TvjDx/beautifytools-javascript-validator.png" alt="beautifytools-javascript-validator"></a>
 
 # Accessibility Testing
 
-[Accesibe website](https://accessibe.com/) - As well as the accessibility test available on lighthouse i also ran a test using Accesibe.
+## Lighthouse Testing
 
-![Accessibe test results](assets/images/AccessiBe%20testpdf.png)
+* My origional design choices proved to cause quite a few accessibility issues.
 
-##Manual Testing
+<a href="https://ibb.co/sHcJpKW"><img src="https://i.ibb.co/X86kf7Y/lighthouse-testing-Acessibility.png" alt="lighthouse-testing-Acessibility">Lighthouse accessibility test results</a>
 
-In addition to the automated process above, manual testing was carried out on the site as well.
+<img src="https://i.ibb.co/CtnTXCy/light-house-accessibility.png" alt="light-house-accessibility">Origional design</a>
 
-* Naviagtion Menu
-    * Verified that all the links link to the appropriate page with no broken links on all pages.
-    * Verified that the logo when clicked links back to the Home Page.
-    * Verified that the logo image has an alt text.
-    * Verified that the hover effects are consistent on all links.
-    * Verified that the navigation bar is full responsive.
 
-* Home Page
-    * Verified that the Hero image is not pixelated and is fully responsive.
-    * Verified that all images on the home page are optimised and have alt functions.
-    * Verified that links to google maps in the meet up section are working.
+<a href="https://ibb.co/H7Wpm8c"><img src="https://i.ibb.co/F6SqGTQ/lighthouse-testing-Acessibility-buttons.png" alt="lighthouse-testing-Acessibility-buttons"></a>
 
-* Events Page
-    * Verified that all the images are optimised and have alt texts. 
-    * Verified that all the elements are fully responsive.
-    * Verified that the video is fully responisve.
+* For aesthetic purposes, I initially decided to use only the font awesome icons to represent each player's move choices. This raised an error with on lighthouse.
+* The choice of adding the written word and the font awesome icon meant that it was more user-friendly for people with impairment but also new users to the game.
+ 
 
-* Pre-Booking page
-    * Verified that contact form cannot be submitted without the required information (First Name, Last Name and Email Address)
-    * Verified that once the information is submitted information is depositited into a dumpfile.
-    * Verified that the page is responsive.
+<a href="https://ibb.co/8P39wrq"><img src="https://i.ibb.co/SVTBgtb/lighthouse-testing-Acessibility-modal-button.png" alt="lighthouse-testing-Acessibility-modal-button"></a>
 
-* Contact us page
-    * Verified that contact form cannot be submitted without the required information (First Name, Last Name and Email Address)
-    * Verified that the submit button send information to a dumpfile.
-    * Verified that the mailto function works correctly on the email link.
-    * Verified that the page is responsive responsive.
+* It also adivse that the colour choice had a low contrast issue which i rectified.
 
-* Footer
-    * Verified that the social media links are all linked properly to the releveant social media home pages.
-    * Verified that all the social media links open in a new tab.
 
-* Browser Testing
+<img src="https://i.ibb.co/fNzPxD8/light-house-results-after-amendments.png" alt="light-house-results-after-amendments"></a>
 
-    * Love Light Photography has been manually tested in Google Chrome, Microsoft Edge, Mozilla Firefox and Safari on both desktop and mobile.
-    * Verified that all images worked correctly
-    * Verified that design and structure was consistent across all browsers.
-    * Verfied responsiveness across all browsers.
+* Lighthouse test results after my changes.
+
+<a href="https://ibb.co/Wz4Y2VD"><img src="https://i.ibb.co/fNzPxD8/light-house-results-after-amendments.png" alt="light-house-results-after-amendments"></a>
+
+ 
+## Manual Testing
+
+* I have tested that this page works in the following browsers: Chrome, Edge, Safari and FireFox.
+* I tested responsiveness in portrait form using the inspect function on google chrome, and it is recommended to play in this position. 
+* I tested that the text is readable in all website areas and that each round decider shows as required in the right circumstances.
 
 ## Bugs Fixed
 
-### HTML Validation
-    
+* Below are screen shots of some of the issues highlighted by devtools. 
 
+<img src="https://i.ibb.co/bKGG1Hx/devtools-bug-javascript-link.png" alt="devtools-bug-javascript-link"></a>
 
-HTML Validation
+* One of the above issues was a simple error with the link between the JavaScript page and HTML and was rectified easily.
 
+* The second was highlighting an issue finding a Favicon. This was due to pre-saved software by Code Institue. When I installed a Favicon onto the site, it created another error because I had followed the steps on the Favicon website on how to install it, not knowing that this step was already preloaded.
 
+* Issue with Modal
 
+<a href="https://ibb.co/TTBMtH0"><img src="https://i.ibb.co/cvchQN8/devtools-bugs-modal-issue.png" alt="devtools-bugs-modal-issue" border="0"></a>
 
+* This was due to the fact that i did not create a getElement between the modal button and Javascript. I did with the Modal itself but didnt recognise that it was needed for both.
 
+* Show icon not defined
 
-### CSS Validation
+<img src="https://i.ibb.co/bsN96H8/devtools-bugs.png" alt="devtools-bugs"></a>
 
+* The above error was caused by me not defining the element before using it in a function.
 
+* The Favicon shown in the above image is the same issue discussed above.
 
-CSS Validation
+* I used a seprate gitpod work space to work through and test code before implimenting it. This help grately to ensure that I didnt break any of the functions that I proviously implimended. 
 
-
-
-* Problem 1 - 
-* Problem 2 - 
-
-
-* Problem 3 - 
-
-* Problem 4 - 
-
-* Problem 5 - 
-
-
-
-[Back to top](<#content>)
+* I aimed to add an option to play a round of 5 or 10 and then for the game to end showing an overall winner, but this caused a lot of issues, and due to time constraints, it had to be left for a future feature.
 
 # Deployment
 
-The website was deployed to GitHub pages via the following methods:
+The website was deployed to GitHub pages via the following method:
 
-1. Navigate to the Settings tab in the GitHub repository for the project.
-2. On the left hand side, scroll down to the pages tab.
-3. Under the Source tab, choose the branch called Main and in the dropdown beside it select the folder called Root.
-4. Click save.
-5. The page automatically displays the deployed link at the top once save is clicked.
-6. It can take up to 5 minutes to deploy.
+1. Navigate to the project's Settings tab in the GitHub repository.
+2. On the left-hand side, scroll down to the pages tab.
+3. Under the Source tab, choose the branch called Main and in the dropdown beside it, select the folder called Root.
+4. Click Save.
+5. The page automatically displays the deployed link at the top once the save is clicked.
+6. It can take up to 5 minutes to deploy. 
 
-The site was deployed to GitHub pages. Here are the steps:
+## To Fork the repository on GitHub
 
-Navigate the Settings tab in the GitHub repository.
-From the source section drop-down menu, select the Master Branch
-Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-You can find the link here Fun Football Quiz
-
-this is an image showing how i did deploy repo in github
-
-Clone the project
-Follow these steps to make a clone of the Fun-Football-Quiz repo:
-If the user wants to clone this project, the user needs to locate Fun Football Quiz repository Code in the dropdown menu and select either download zip or open with Github Desktop.
-this is an image for how cloning by download zip
-
-A user can copy and paste the link into their git terminal by clicking GitHub CLI and the Copy button in the Code Dropdown menu.
-OR
-
- gh repo clone hashim222/Fun-Football-Quiz
-this is an image for how cloning by links
-[Back to top](<#content>)
-
-# Credits
-
-* Fonts were sourced from [Google Fonts](https://fonts.google.com/)
-* All images from the website were sourced from [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/)
-* 
-* 
-* 
-* 
-
-[Back to top](<#content>)
-
-# Acknowledgements
-
-This site, was designed and developed in conjunction with the Full Stack Software Developer Diploma course (eccommerce) at the Code Institute. I would like to thank my mentor, my class facilitator, the members of our class, the Slack community and Code Institute for all their support.
-
-[Back to top](<#content>)
+A copy of the GitHub Repository can be made by forking the GitHub account. Changes can be made on this copy without affecting the origional repository.
 
 
-Kill Bill image:
-https://www.1zoom.me/en/wallpaper/347640/z353.8/
+* [Credits](<#credits>)
+* [Acknowledgements](<#acknowledgements>)
 
 
-
-
-
-
-
-
-
-Example of a box
-
-|              | Start of a box                                                               |
-| ----------------- | ------------------------------------------------------------------ |
-| Info | data |Info | data |Info | data |Info | data |Info | data |
-| Info | data |Info | data |Info | data |Info | data |Info | data |
-| Info | data |Info | data |Info | data |Info | data |Info | data |
-| Info | data |Info | data |Info | data |Info | data |Info | data |
-| Info | data |Info | data |Info | data |Info | data |Info | data |
-| Info | data |Info | data |Info | data |Info | data |Info | data |
-| Info | data |Info | data |Info | data |Info | data |Info | data |
-| Info | data |Info | data |Info | data |Info | data |Info | data |
-let myQuestions = [
-  {
-    question: "What year was the first Kill Bill released?",
-    answers: {
-      a: "1999",
-      b: "2003",
-      c: "2001",
-      d: "2004",
-    },
-    correctAnswer: 'b'
-  },
-  {
-    question: "By what name is Uma Thurman's character known throughout the film?",
-    answers: {
-      a: "Black Momba",
-      b: "Arlene",
-      c: "The Bride",
-      d: "she has no name or nickname",
-    },
-    correctAnswer: "c"
-  },
-{
-  question: "What color is associated with the Bride?",
-  answers: {
-    a: "black",
-    b: "yellow",
-    c: "red",
-    d: "white",
-  },
-  correctAnswer: "b"
-},
-{
-  question: "On what scene does the movie open?",
-  answers: {
-    a: "the massacre at the wedding chapel",
-    b: "Vernita Green's house",
-    c: "the sheriff's examination of the massacre aftermath",
-    d: "the aftermath of the House of Blue Leaves Showdown",
-  },
-  correctAnswer: "a"
-},
-{
-  question: "What was the name of the team of assassins?",
-  answers: {
-    a: "the Snake Den",
-    b: "Deadly Vipers Assassination Squad",
-    c: "Operation Snowblood",
-    d: "the Snake Charmers",
-  },
-  correctAnswer: "b"
-},
-{
-  question: "What unusual item does Elle Driver wear?",
-  answers: {
-    a: "a prosthetic foot",
-    b: "a neck brace",
-    c: "an eyepatch",
-    d: "a Medic-Alert bracelet",
-  },
-  correctAnswer: "b"
-},
-{
-  question: "What was Elle Driver's codename during her assassin years?",
-  answers: {
-    a: "sidewinder",
-    b: "water moccasin",
-    c: "ball python",
-    d: "California mountain snake",
-  },
-  correctAnswer: "d"
-},
-{
-  question: "What is painted on the truck that the Bride drives?",
-  answers: {
-    a: "Blitzmobile",
-    b: "Pussy Wagon",
-    c: "Suavecito",
-    d: "Vengeance is Mine",
-  },
-  correctAnswer: "b"
-},
-{
-  question: "What question does the Bride repeatedly ask Buck when she wakes up in the hospital?",
-  answers: {
-    a: "Where am I?",
-    b: "Where is my baby?",
-    c: "Who am I?",
-    d: "Where's Bill?",
-  },
-  correctAnswer: "d"
-},
-{
-  question: "Where is the gun hidden with which Vernita tries to shoot the Bride?",
-  answers: {
-    a: "a cereal box",
-    b: "her purse",
-    c: "a dishtowel",
-    d: "a hollowed-out Bible",
-  },
-  correctAnswer: "a"
-},
-{
-  question: "Who played Vernita Green?",
-  answers: {
-    a: "Jade Pinkett Smith",
-    b: "Hally Berry",
-    c: "Vivica A. Fox",
-    d: "Stacey Dash",
-  },
-  correctAnswer: "c"
-},
-{
-  question: "What does the Bride do that tells the sheriff she's not dead?",
-  answers: {
-    a: "coughs",
-    b: "winks at him",
-    c: "spits on him",
-    d: "opens her eyes",
-  },
-  correctAnswer: "c"
-},
-{
-  question: "Complete the sentence: 'If you encounter God on your travels, __________.'",
-  answers: {
-    a: "'Take care taht you step aside.'",
-    b: "'god will approve.'",
-    c: "'God will step aside.'",
-    d: "'God will be cut.'",
-  },
-  correctAnswer: "d"
-},
-];

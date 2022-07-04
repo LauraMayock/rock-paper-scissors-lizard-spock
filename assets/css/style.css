@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Manrope:wght@300&family=Mukta:wght@200;800&family=Work+Sans:ital,wght@1,300&display=swap');
+
 /* universal selector */
 *{
     padding: 0;
@@ -11,6 +13,7 @@ body {
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
+    font-family:'Heebo', sans-serif,'Times New Roman';
 }
 
 @keyframes gradient {
@@ -124,6 +127,7 @@ h2{
     padding: 5%;
     width: 50%;
     text-align: center;
+    font-family: 'Manrope', sans-serif,'Times New Roman';
 }
 
 .modal h3{
@@ -266,5 +270,11 @@ font-size: 1.25rem;
 .selection button {
  width:130px;
 }
-
+.container{
+    display: flex;
+    align-content: stretch;
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: nowrap;
+}
  }
