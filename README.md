@@ -3,7 +3,7 @@
 # **_Rock Paper Scissors Lizard Spock - Portfolio Project 2 - HTML, CSS & Javascript_**
 Created by the producers of the hit TV series The Big bang theory as a way for the 2 beloved charactors, Sheldon Cooper and Rajesh Koothrappali to settle a dispute about what to watch on TV. Rock Paper Scissors Lizard Spock is a fun twist on the old game of two people using only your hands and some simple rules. 
 
-You can view the live site here - <a href="https://lauramayock.github.io/Rock-paper-sissors/" target="_blank"> Rock Paper Scissors Lizard Spock 
+You can view the live site here - <a href=" https://lauramayock.github.io/rock-paper-scissors-lizard-spock/" target="_blank"> Rock Paper Scissors Lizard Spock 
 ----
 # Content
 
