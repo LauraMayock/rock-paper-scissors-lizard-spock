@@ -1,3 +1,9 @@
+/* This script was created using the following tutorial:
+https://javascript.tutorialink.com/rock-paper-scissors-game-using-javascript/
+I have borrowed code from this tutorial to assist with creation of the game.
+and I have also personalised some of the code for my own styling and added to it.
+*/
+
 // Selecting elements from HTML.
 const pScore = document.getElementById('playerScore');
 const cScore = document.getElementById('computerScore');
