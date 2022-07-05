@@ -38,6 +38,8 @@ You can view the live site here - <a href="https://lauramayock.github.io/Rock-pa
     * [Manual Testing](<#manual-testing>)
     * [Bugs Fixed](<#bugs-fixed>)
 * [Deployment](<#deployment>)
+    * [To Fork the repository on GitHub](#To-Fork-the-repository-on-GitHub)
+    * [To Clone the repository on GitHub](#To-Clone-the-repository-on-GitHub)
 * [Credits](<#credits>)
 * [Acknowledgements](<#acknowledgements>)
 
@@ -304,8 +306,32 @@ The website was deployed to GitHub pages via the following method:
 
 A copy of the GitHub Repository can be made by forking the GitHub account. Changes can be made on this copy without affecting the origional repository.
 
+1. Log in to GitHub and locate the repository in question.
+2. Locate the Fork button which can be found in the top corner, right-hand side of the page, inline with the repository name.
+3. Click this button to create a copy of the origional repository in your GitHub Account.
+
+## To Clone the repository on GitHub
+
+1. Click on the code button which is underneath the main tab and repository name to the right.
+2. In the "Clone with HTTPS' section, click on the clipboard icon to copy the URL.
+3. Open Git Bash in your IDE of choice.
+4. Change the current working directory to where you wan the cloned directory to be made.
+5. Type git clone, and then paste the URL copied form GitHub.
+6. Press enter and the clone of your repository will be created.
+
+
+
 
 * [Credits](<#credits>)
-* [Acknowledgements](<#acknowledgements>)
+* [Css background](https://codepen.io/P1N2O/pen/pyBNzX)
+* [Javascript Jutorial source](https://javascript.tutorialink.com/rock-paper-scissors-game-using-javascript/)
+* [Javascript Jutorial source 2](https://betterprogramming.pub/7-ways-to-code-rock-paper-scissors-in-javascript-4189a5e7e535)
+* [Javascript Jutorial source 3](https://wierdlygoodcoder.github.io/rock-paper-scissors/)
+* [modal tutorial](https://www.w3schools.com/w3css/w3css_modal.asp)
+* [Css grid](https://www.youtube.com/watch?v=9zBsdzdE4sM&t=5s&ab_channel=WebDevSimplified)
+* [Basis of READ.ME](https://github.com/LauraMayock/motherandbaby/blob/main/README.md)
 
+
+* [Acknowledgements](<#acknowledgements>)
+This site, was designed and developed in conjunction with the Full Stack Software Developer Diploma course (eccommerce) at the Code Institute. I would like to thank my class facilitator, the members of our class, the Slack community and Code Institute for all their support.
 

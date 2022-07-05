@@ -16,6 +16,7 @@ body {
     font-family:'Heebo', sans-serif,'Times New Roman';
 }
 
+/* Positioning of key items */
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -42,8 +43,10 @@ body {
     width: 100vw;
     height: 500px;
 }
+
+/* Styling of game */
 h1 {
-    font-family: sans-serif;
+    font-family:'Heebo', sans-serif,'Times New Roman';
     font-weight: 800;
     text-align: center;
     padding-top: 10px;
@@ -57,10 +60,11 @@ h1 {
 .info span , .info h3{
     font-size:1.25rem;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family:'Heebo', sans-serif,'Times New Roman';
     color:white;
 }
 
+/* Styling main images*/
 .show{
     display: flex;
     align-items: center;
@@ -76,12 +80,14 @@ font-size: 100px;
 
 }
 
+
 h2{
-    font-family: sans-serif;
+    font-family:'Heebo', sans-serif,'Times New Roman';
     font-weight: bold;
     text-align: center;
 }
 
+/* Players Buttons */
 .selection{
     display:flex;
     align-items: center;
@@ -98,6 +104,7 @@ h2{
     font-size: 1.25rem;
 }
 
+/* Hover element */
 .selection button:hover{
         border: 7px solid white;
     }
@@ -198,9 +205,16 @@ h2{
     grid-template-rows: 90px 65px 65px;
 }
 
+/* Resizing of game heading */
 h1 {
     width: 90%;
 }
+
+.modal-content {
+    width: 80%;
+    height: 500px;
+}
+
  }
  /* On screens that are 530px or less */
  @media screen and (max-width: 490px) {
@@ -212,6 +226,11 @@ h1 {
         font-size: 1rem;
     }
 
+
+    
+
+
+/* restyling of the two main images */
 .container{
     display: flex;
     align-content: space-around;
@@ -223,15 +242,12 @@ h1 {
 }
 .container h3 {
     font-size: 18px;
+    width: 200px;
 }
 
 .show {
     width: 150px;
 }
-.modal-content{
-width: 90%;
-height: 450px;
- }
 
 #myBtn{
 font-size: 1.25rem;
@@ -249,9 +265,13 @@ font-size: 1.25rem;
 .selection {
     display:grid;
     grid-template-columns: 190px 190px;
-    grid-template-rows: 80px 55px 65px;
+    grid-template-rows: 92px 90px 90px;
 }
 
+.modal-content {
+    width: 80%;
+    height: 600px;
+}
 }
 
 
@@ -259,8 +279,9 @@ font-size: 1.25rem;
  @media screen and (min-width: 320px) and (max-width: 489px) {
 
 .modal-content{
-    width: 90%;
-    height: 450px;
+    height: 400px;
+    width: 60%;
+    margin: 0;
 }
 
 .show {
@@ -277,4 +298,10 @@ font-size: 1.25rem;
     width: 100vw;
     flex-wrap: nowrap;
 }
+
+.modal-content{
+    height: 600px;
+    width: 80%;
+}
+
  }
